@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: hsl(208, 100%, 93%);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: hsl(119, 69%, 66%);
+  color: midnightblue;
+}
+
+.addTask,
+.editBtn,
+.dltBtn,
+.Add {
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  background-color: hsl(240, 64%, 27%);
+  font-size: 0.87rem;
+  font-weight: 520;
+  width: 100px;
+}
+
+.addTask {
+  width: fit-content;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+.addTask:hover,
+.editBtn:hover,
+.dltBtn:hover, 
+.Add {
+  background-color: hsl(224, 70%, 30%);
+}
+
+.editBtn, .dltBtn {
+  margin: 10px;
+}
+
+.todo {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px;
+}
+
+.todoList {
+  background-color: hsl(123, 21%, 79%);
+  margin: 2px 0 10px ;
+  padding: 10px 14px ;
+  border-radius: 6px;
+}
+
+.add-todo-form {
+  max-width: 300px;
+  background-color: hsl(123, 21%, 79%);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px ;
+  border: none;
+  border-radius: 6px;
+}
+.taskLbl {
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+input[type="checkbox"] {
+  width: 90px;
+  height: 20px;
+  border: 2px solid green;
+  outline: green;
+}
+
+.check{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.2rem;
+}
+
+.Add {
+  margin: 20px auto;
+}
