@@ -41,6 +41,7 @@ function App() {
   return (
     <div>
       <Navbar onAddClick={() => {
+        if(editing === true) return;
         setShowInput(true)
         setTaskBeingEdited(null)
         setEditing(false)
